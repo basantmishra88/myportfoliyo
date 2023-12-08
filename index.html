@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfoliyo website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/606ce356c1.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div>
+        <nav id="navbar">
+            <h1 class="logo">Basant Mishra</h1>
+            <ul class="ul" id="sidebar">
+                <li><a href="#header" onclick="closemenu()">Home</a></li>
+                <li><a href="#about" onclick="closemenu()">About</a></li>
+                <li><a href="#services" onclick="closemenu()">Services</a></li>
+                <li><a href="#portfolio" onclick="closemenu()">Project</a></li>
+                <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+                <i class="fa-solid fa-xmark icon" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars icon" onclick="openmenu()"></i>
+        </nav>
+    </div>
+    <div id="header" onclick="closemenu()">
+        
+        <div class="container">
+            <div class="header-text">
+                <h1>welcome to my website</h1>
+                <h1>Hi! My name is  <br><span>Basant Mishra</span><br>I am</h1>
+                <div class="element"><span id="element"></span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- This is about page -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/ut.png" alt="user image" class="about-image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title my-work">ABOUT ME</h1>
+                    <h4 class="mern">I'am MERN developer who loves creating applications.</h4>
+                    <p>
+                        Passionate MERN stack developer adept at crafting scalable
+                        and innovative web applications. Proficient in MongoDB,Express.js
+                        React and Node.js I combine technical expertise with a keen eye for 
+                        user experience ensuring the delivery of high-quality, responsive solutions.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Working with</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI / UX</span><br>Designing Web and Web-app</li>
+                            <li><span>Web developement</span><br>MERN Web App developement</li>
+                            <!-- <li><span>App developement</span><br>Android App developement</li> -->
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>FRONTEND</span><br>html,css, javaScript, Bootstrap, tailwind,React</li>
+                            <li><span>BACKEND</span><br>javaScript,Node.js,Express.js other package and library</li>
+                            <li><span>DATABASE</span><br>MongoDB</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Bachelor of Computer Application</span><br>ss college shahjahanpur (U.P)</li>
+                            <li><span>INTERMEDIATE</span><br>Nalanda public shiksha niketan inter college</li>
+                            <li><span>HIGH-SCHOOL</span><br>Nalanda public shiksha niketan Inter college</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------services---------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title my-work">My services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Application developement</h2>
+                    <p>
+                       Transforming ideas into realty through my skills.
+                    </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX design</h2>
+                    <p>
+                        Expert in UI / UX  design, blending creativity 
+                        with user-centric principles to craft seamless
+                         and compelling digital interactions.
+                    </p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>WEB APP</h2>
+                    <p>
+                        Mern developer skilled in MongoDB, Express.js
+                        , React.js and Node.js crafting dynamic web application with user-
+                        centeric design.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------project--------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title my-work">My Project</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/ser1.jpg" alt="image">
+                    <h2 class="my-work">AIRBNB CLONE</h2>
+                    <div class="layer">
+                        <h3>AIRBNB CLONE</h3>
+                        <p>This is airbnb clone with Backend</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/ser1.jpg" alt="image">
+                    <h2 class="my-work">SPOTIFY CLONE</h2>
+                    <div class="layer">
+                        <h3>SPOTIFY CLONE</h3>
+                        <p>This is spotify clone</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/ser1.jpg" alt="image">
+                    <h2 class="my-work">COLOR GENERATOR</h2>
+                    <div class="layer">
+                        <h3>COLOR GENERATOR</h3>
+                        <p>This is simple color generator web page</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/ser1.jpg" alt="image">
+                    <h2 class="my-work">TODO APP</h2>
+                    <div class="layer">
+                        <h3>TODO APP</h3>
+                        <p>This is todo app with html,css and javaScript</p>
+                        <a href="https://basantmishra88.github.io/Todo_app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/ser1.jpg" alt="image">
+                    <h2 class="my-work">QUIZ APP</h2>
+                    <div class="layer">
+                        <h3>QUIZ APP</h3>
+                        <p> This is simple quiz app</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- contact page -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title cont">Contact me</h1>
+                    <p class="cont"><i class="fa-regular fa-envelope"></i>basantmishra3875@gmail.com</p>
+                    <p class="cont"><i class="fa-solid fa-phone"></i>8881503881</p>
+                    <div class="social-icon">
+                        <a href="https://github.com/basantmishra88"><i class="fa-brands fa-github ic"></i></a>
+                        <a href="https://www.linkedin.com/in/basantmishra88/"><i class="fa-brands fa-linkedin ic"></i></a>
+                        <a href="#"><i class="fa-solid fa-x ic"></i></a>
+                        <a href="https://www.instagram.com/basantmishra88/"><i class="fa-brands fa-instagram ic" ></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" id="" placeholder="your name" required>
+                        <input type="email" name="email" id="" placeholder="your email" required>
+                        <textarea name="message" id="" rows="6" placeholder="your message" required></textarea>
+                        <span id="msg"></span>
+                        <button type="submit" class="btn btn-2">submit</button>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>
+                <span class="heart">&#10084;</span>
+                Thanks for visit my portfolio website.
+                <span class="heart">&#10084;</span>
+            </p>
+        </div>
+    </div>
+    
+
+
+    <script>
+        let tablinks=document.getElementsByClassName("tab-links");
+        let tabcontents=document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        // sidebar
+        let sidebar=document.getElementById("sidebar");
+        function openmenu(){
+            sidebar.style.right="0";
+        }
+        function closemenu(){
+            sidebar.style.right="-200px";
+        }
+
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwhe2K__jxAK4cp22lII-XXkpn-u8sxw5yerSDZ_xur3dpDk9d3jd502WMfvwYhOBlxVw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg");
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerText="Message sent successfully"
+                let id=setTimeout(()=>{
+                    msg.innerText="";
+                },5000)
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+      <script>
+        var typed = new Typed('#element', {
+          strings: ["FULL STACK DEVELOPER","MERN DEVELOPER", "WEB DESIGNER",
+          "CONTENT WRITER","FULL STACK DEVELOPER","MERN DEVELOPER", "WEB DESIGNER",
+          "CONTENT WRITER","FULL STACK","FULL STACK DEVELOPER","MERN DEVELOPER", "WEB DESIGNER",
+          "CONTENT WRITER","FULL STACK DEVELOPER","MERN DEVELOPER", "WEB DESIGNER",
+          "CONTENT WRITER","FULL STACK MERN DEVELOPER"],
+          typeSpeed: 100,
+        });
+      </script>
+</body>
+</html>
